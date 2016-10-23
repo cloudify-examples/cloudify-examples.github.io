@@ -1,0 +1,27 @@
+machine:
+  hosts:
+    getcloudify.org: 127.0.0.1
+  python:
+    version:
+      2.7.8
+  ruby:
+    version:
+      2.2.0
+
+## Customize dependencies
+dependencies:
+  override:
+    - bundle install:
+        timeout: 3600
+    - "if [ $CIRCLE_BRANCH != \"master\" ] ; then echo \"baseurl: /$CIRCLE_BRANCH\" >> _config.yml; fi"
+    - jekyll build --verbose:
+        timeout: 3600
+    # - pip install LinkChecker
+  cache_directories:
+    - /home/ubuntu/.rvm/gems/ruby-2.2.0
+test:
+  override:
+    - cd _site ; sudo -E python -mSimpleHTTPServer 80:
+       background: true
+    - sleep 3
+
