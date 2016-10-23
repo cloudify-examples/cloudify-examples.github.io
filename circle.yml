@@ -11,6 +11,7 @@ machine:
 ## Customize dependencies
 dependencies:
   override:
+    - gem install bundler
     - bundle install:
         timeout: 3600
     - "if [ $CIRCLE_BRANCH != \"master\" ] ; then echo \"baseurl: /$CIRCLE_BRANCH\" >> _config.yml; fi"
