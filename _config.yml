@@ -17,8 +17,8 @@ title: Cloudify Examples and Use Cases
 email: hello@getcloudify.org
 description: >
     This site indexes Cloudify use cases shared by Cloudify's users.
-# baseurl: "" # the subpath of your site, e.g. /blog
-# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://cloudify-examples.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
