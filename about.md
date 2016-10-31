@@ -12,3 +12,4 @@ Types of examples are:
 * Original Plugins
 * Extensions to existing Cloudify Plugins
 
+To submit a project that you have worked on, email <hello@getcloudify.org>.
