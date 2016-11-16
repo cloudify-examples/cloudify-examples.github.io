@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Key Creation Support"
+date:   2016-11-16 17:17:00 +0300
+categories: plugins
+---
+
+We created a plugin that creates RSA key pairs locally. This may make it easier to provide keys for VMs in the Azure Plugin.
+
+[Link to Cloudify Key Plugin](https://github.com/cloudify-examples/cloudify-key-plugin)
+
+[Link to Azure Example Blueprint](https://github.com/cloudify-examples/cloudify-key-plugin/blob/master/examples/azure-blueprint.yaml)
