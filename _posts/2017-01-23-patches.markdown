@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Cloudify Patches"
+date:   2017-01-23 17:17:00 +0300
+categories: patches
+---
+
+We are introducing a new category in addition to "plugins" and "blueprints": "patches".
+
+Simple fixes or changes that don't require a full plugin extension or feature can now be shared via the Cloudify patches repo.
+
+[Link to Repository](https://github.com/cloudify-examples/patches/)
+
+First example patch is to supprt accessing lists from the [cloudify deployment proxy](https://github.com/cloudify-examples/cloudify-proxy-plugin).
+
+[Link to Patch](https://github.com/cloudify-examples/patches/tree/master/cloudify/server/3.4/add-proxy-lists)
